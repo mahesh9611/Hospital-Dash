@@ -1,0 +1,20 @@
+{
+  "name": "Hospital Availability",
+  "short_name": "HospitalDash",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/169/169869.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/169/169869.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
