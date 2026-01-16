@@ -1,0 +1,185 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f0f2f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+input, button, textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px; /* Prevent zoom on mobile */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#clearBtn {
+    background-color: #6c757d;
+}
+
+#clearBtn:hover {
+    background-color: #5a6268;
+}
+
+.hospital-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hospital-table th, .hospital-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+}
+
+.hospital-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.icon-btn {
+    background: #e7f3ff;
+    border: 1px solid #b5d4ff;
+    padding: 8px 12px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.icon-btn:hover {
+    background: #d3e8ff;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    fill: currentColor;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .hospital-table, .hospital-table thead, .hospital-table tbody, .hospital-table th, .hospital-table td, .hospital-table tr {
+        display: block;
+    }
+
+    .hospital-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .hospital-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: white;
+        padding: 10px;
+    }
+
+    .hospital-table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+    }
+    
+    .hospital-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left;
+        flex: 1;
+    }
+
+    .hospital-table td:last-child {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+    }
+}
